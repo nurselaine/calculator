@@ -95,8 +95,6 @@ class App extends React.Component{
         this.math(Number(this.state.result), Number(this.state.num), this.state.sign),
       num: 0,
     })
-    // console.log(value);
-    // console.log(this.state.result);
   }
 
   commaClickHandler = (e) => {
@@ -122,8 +120,7 @@ class App extends React.Component{
           : this.state.num % 1 === 0
           ? Number(this.state.num + value) // Number function changes string to num
           : this.state.num + value,
-      result: !this.state.sign ? 0 : this.state.result, // what does res: mean 
-      // sign: '',
+      result: !this.state.sign ? 0 : this.state.result,  
     });
   }
 
