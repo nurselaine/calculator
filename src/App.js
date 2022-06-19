@@ -75,7 +75,7 @@ class App extends React.Component{
           this.state.num === 0 && this.state.sign === '/'
           ? 'NaN'
           : this.math(Number(this.state.result), Number(this.state.num), this.state.sign),
-        sign: '',
+        sign: this.state.sign,
         num: 0,
       })
       console.log(this.state.result);
